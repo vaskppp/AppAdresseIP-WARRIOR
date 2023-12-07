@@ -89,6 +89,8 @@ namespace AppAdresseIP
             strOctetQuatre = Console.ReadLine();
             octetQuatre = int.Parse(strOctetQuatre);
 
+            return SaisieIP;
+
         }
 
   
