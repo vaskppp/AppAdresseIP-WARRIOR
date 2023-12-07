@@ -60,7 +60,37 @@ namespace AppAdresseIP
         }
 
 
- 
+        public static int SaisieIp()
+        {
+            string strOctetUn;
+            string strOctetDeux;
+            string strOctetTrois;
+            string strOctetQuatre;
+            int octetUn;
+            int octetDeux;
+            int octetTrois;
+            int octetQuatre;
+
+            Console.WriteLine("Saisir une adresse IP");
+
+            Console.WriteLine("1er octet : ");
+            strOctetUn = Console.ReadLine();
+            octetUn = int.Parse(strOctetUn);
+
+            Console.WriteLine("2eme octet : ");
+            strOctetDeux = Console.ReadLine();
+            octetDeux = int.Parse(strOctetDeux);
+
+            Console.WriteLine("3eme octet : ");
+            strOctetTrois = Console.ReadLine();
+            octetTrois = int.Parse(strOctetTrois);
+
+            Console.WriteLine("4eme octet : ");
+            strOctetQuatre = Console.ReadLine();
+            octetQuatre = int.Parse(strOctetQuatre);
+
+        }
+
   
 
 
