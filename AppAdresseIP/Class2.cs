@@ -1,31 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AppAdresseIP
+﻿namespace AppAdresseIP
 {
     class Class2
     {
         //CalculMasque
         public static int[,] CalculMasque(int CIDR)
         {
-            int[,] masque = new int[ 4, 8 ];
-            int nombreDe1 = CIDR;
+            int[,] masque = new int[4, 8];
 
-            for (int i = 0; i < 4; i++)
+            for (int octet = 0; octet < 4; octet++)
             {
-                for (int j = 7; j >= 0; j--)
+                for (int bit = 7; bit >= 0; bit--)
                 {
-                    if (nombreDe1 > 0)
+                    if (CIDR > 0)
                     {
-                        masque[i, j] = 1;
-                        nombreDe1--;
+                        masque[octet, bit] = 1;
+                        CIDR--;
                     }
                     else
                     {
-                        masque[i, j] = 0;
+                        masque[octet, bit] = 0;
                     }
                 }
             }

@@ -134,6 +134,7 @@ namespace AppAdresseIP
             AfficheIPbin("Adresse broadcast en binaire :\t", ipBroadcastBin);
 
             Console.ReadKey();
+
         }
     }
 }
